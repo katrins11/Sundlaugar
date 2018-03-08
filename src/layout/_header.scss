@@ -1,0 +1,33 @@
+.jumbotron_forsida{
+	height: 340px;
+	background-image: url(../images/laugarForsida.jpg);
+	background-size: 100% 340px;
+    margin-bottom: 0px;
+    img{
+    	height: 50px;
+    	margin-top: 180px;
+    	margin-left: 10%;
+    }
+    z-index: 99999;
+    position: relative;
+}
+/*To Top*/
+header {
+    background: $white;
+    height: 40px;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+.nav-up {
+    top: -40px;
+}
+.glyphicon-menu-up {
+    color: $darkBlue;
+    font-size: em(24);
+    padding-top: em(8);
+}
+/*To Top Ends*/

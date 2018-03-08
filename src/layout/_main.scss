@@ -1,0 +1,450 @@
+.leitar-input {
+	@include textLayout(pLeit);
+	&:focus {
+		outline: none;
+	}
+	width: 100%;
+	height: em(90);
+	border: none;
+	border-bottom: em(2) solid $neonGreen;
+	border-left: em(88) solid $neonGreen;
+	text-indent: em(40);
+}
+.twitter-typeahead{
+	width: 100%;
+}
+/*Leitardæmið*/
+.tt-dataset {
+	background: $transparentWhite;
+	border-left: em(106) solid $neonGreen;
+	@include textLayout(pLeitDropdown);
+	color: $darkBlue;
+}
+.tt-menu {
+	width: 100%;
+	margin-top: 0;
+	text-indent: em(118);
+	
+	.tt-suggestion {		
+		&.tt-cursor, &:hover {
+		background: $neonGreen;
+		color: $white;
+		font-family: "font-demi";
+		background-image: url(../icon/arrow_icon.svg);
+		background-repeat: no-repeat;
+		background-size: em(22);
+		background-position: 6% 50%;
+		}
+	}
+}
+/*Leitardæmið Búið*/
+
+
+/* Velja stað dropdown*/
+.glyphicon-menu-right {
+	color: $neonGreen;
+}
+button.velja_stad {
+	@include textLayout(pButtonText);
+    background: #FFF;
+    padding: em(8) em(17) ;
+    height: em(38);
+    margin-top: em(2);
+    margin-left: em(35);
+    border: em(3) solid $neonGreen;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 $neonGreen;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	display: none;
+	@media only screen and (max-width: 768px) {
+     	  display: block;
+     }
+}
+button.velja_stad:hover {
+    box-shadow: inset em(250) 0 0 0 $neonGreen;
+    color: #FFF;
+}
+/* dropdown lokið*/
+
+
+
+
+form{
+	margin-bottom: em(20);
+}
+.flokkaVal{
+	@include hoverLinaFlokkar;
+	margin-bottom: em(40);
+	ul{
+		list-style-type: none;
+		li{
+			display: inline-block;
+		}
+	}
+}
+.bigScreen ul {
+	display: inline-flex;
+}
+.first{
+	margin-right: em(30);
+	margin-left: em(30);
+	padding-left: em(60);
+	border-left: em(3) solid $darkBlue;
+}
+
+.bigPlaceInfo{
+	background-color: $transparentBlue;
+	width: em(200);
+	padding: em(5) 0 em(10) 0;
+	@include textLayout(h2BigCard);
+	b{
+		color: $neonGreen;
+		margin-right: em(10);
+	}
+	h2{
+		margin-left: em(10);
+	}
+}
+
+.underLine{
+	@include hoverLineOpentime;
+}
+.bigTimeInfo{
+	background-color: $transparentWhite;
+	height: em(150);
+	width: em(350);
+	position: absolute;
+	margin-left: em(20);
+	bottom: 0;
+
+	p{
+		margin-left: em(35);
+		margin-top: em(15);
+	}
+	ul{
+		list-style: none;
+	}
+	@include textLayout(h3BigCard);
+	.open{
+		@include textLayout(pBigCard);
+	}
+}
+
+.smallPlaceInfo{
+	background-color: $transparentBlue;
+	width: 100%;
+	height: em(35);
+	@include textLayout(h2SmallCard);
+}
+.smallCard{
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 50px;
+	.smallTimeInfo{
+		@include smallCardInfoTime;
+		background-color: $transparentWhite;
+		position: absolute;
+		bottom: -120px;
+		transition: all 0.5s ease;
+		height: 162px;
+    	width: 100%;
+	}
+}
+
+.smallCard:hover .smallTimeInfo{
+	bottom: 0;
+}
+
+.bigLaugardalur{
+	background-image: url(../images/laugardalur.jpg);
+	@include bigCardInfo;
+}
+.bigArbaer{
+	background-image: url(../images/arbajarlaug.jpg);
+	@include bigCardInfo;
+}
+.bigHofsos{
+	background-image: url(../images/hofsosLaug4.jpg);
+	@include bigCardInfo;
+}
+.bigLagafell{
+	background-image: url(../images/moso.jpg);
+	@include bigCardInfo;
+}
+.bigBorgarnes{
+	background-image: url(../images/borgarnes.jpg);
+	@include bigCardInfo;
+}
+.bigSundhollin{
+	background-image: url(../images/sundhollRvk.jpg);
+	@include bigCardInfo;
+}
+.bigVestmannaeyjar{
+	background-image: url(../images/vestmanneyjar.jpg);
+	@include bigCardInfo;
+}
+.bigLaugar{
+	background-image: url(../images/laugar.jpg);
+	@include bigCardInfo;
+}
+.bigAsvallalaug{
+	background-image: url(../images/asvallalaug2.jpg);
+	@include bigCardInfo;
+}
+.bigDalvik{
+	background-image: url(../images/davik.jpg);
+	@include bigCardInfo;
+}
+.bigHofn{
+	background-image: url(../images/hofn.jpg);
+	@include bigCardInfo;
+}
+.bigHusavik{
+	background-image: url(../images/husavik.jpg);
+	@include bigCardInfo;
+}
+.bigNeskaupsstadir{
+	background-image: url(../images/neskaupsstadur.jpg);
+	@include bigCardInfo;
+}
+.bigOlafsfjordur{
+	background-image: url(../images/olafsfjordur.jpeg);
+	@include bigCardInfo;
+}
+
+
+#cardsSmall .mix{
+	display: none;
+}
+#cardsBig .mix{
+	display: none;
+}
+
+.cardsSmall{
+	.smallLaugardalur{
+		background-image: url(../images/laugardalurSmall.jpg);
+		@include smallCardInfo;
+	}
+	.smallArbaer{
+		background-image: url(../images/arbajarlaugSmall.jpg);
+		@include smallCardInfo;
+	}
+	.smallHofsos{
+		background-image: url(../images/hofsosSmall.jpg);
+		@include smallCardInfo;
+	}
+	.smallLagafell{
+		background-image: url(../images/mosoSmall.jpg);
+		@include smallCardInfo;
+	}
+	.smallBorgarnes{
+		background-image: url(../images/borgarnes.jpg);
+		@include smallCardInfo;
+	}
+	.smallSundhollin{
+		background-image: url(../images/sundhollRvkSmall.jpg);
+		@include smallCardInfo;
+	}
+	.smallVestmannaeyjar{
+		background-image: url(../images/vestmanneyjar.jpg);
+		@include smallCardInfo;
+	}
+	.smallLaugar{
+		background-image: url(../images/laugar.jpg);
+		@include smallCardInfo;
+	}
+	.smallAsvallalaug{
+		background-image: url(../images/asvallalaug2.jpg);
+		@include smallCardInfo;
+	}
+	.smallDalvik{
+		background-image: url(../images/davik.jpg);
+		@include smallCardInfo;
+	}
+	.smallHofn{
+		background-image: url(../images/hofn.jpg);
+		@include smallCardInfo;
+	}
+	.smallHusavik{
+		background-image: url(../images/husavik.jpg);
+		@include smallCardInfo;
+	}
+	.smallNeskaupsstadur{
+		background-image: url(../images/neskaupsstadur.jpg);
+		@include smallCardInfo;
+	}
+	.smallOlafsfjordur{
+		background-image: url(../images/olafsfjordur.jpeg);
+		@include smallCardInfo;
+	}
+}
+footer{
+	margin-top: 50px;
+}
+@media only screen and (max-width: 1199px){
+	.flokkaVal button {
+		margin-left: em(5);
+		margin-right: em(15);
+	}
+	button.opidNunaTakki {
+		margin: -2px 0 7px 25px;
+	}
+	#bigIcon, #smallIcon{
+		height: 23px;
+	}
+}
+@media only screen and (max-width: 992px){
+	/*DROPDOWN*/
+	#bigIcon, #smallIcon{
+		display: none;
+	}
+	.bigScreen{
+		display: inline-flex;
+		.opidNunaTakki{
+			margin: 6px 0 7px 25px;
+		}
+	}
+	.underLine{
+		&:before {
+	    	display: none;
+		}
+		&:after {
+	    	display: none;
+		}
+		&:hover:before {
+	    	display: none;
+		}
+		&:hover:after {
+	    	display: none;
+		}
+		.bigTimeInfo{
+			p{
+				border-bottom: 3px solid $neonPink;
+			}
+		}
+	}
+}
+
+ @media only screen and (min-width: 769px) {
+    .flokkaVal{
+    	.flokka-val-inner_2 {
+	    		display: none;
+	    }
+    }
+}
+
+/* for ipad*/
+@media only screen and (max-width: 768px){
+	.jumbotron_forsida{
+    	height: 250px;
+    	background-size: 100% 250px;
+    	img {
+    		height: 40px;
+		    margin-top: 130px;
+		}
+	}
+	.leitar-input {
+		border-left: em(50) solid $neonGreen;
+	}
+	.tt-dataset {
+		border-left: em(60) solid $neonGreen;
+	}
+	.flokkaVal{
+	    display: none;
+		background-color: $white;
+		z-index: 9999999;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		.flokka-val-inner {
+    		display: none;
+        	}
+    	.flokka-val-inner_2 {
+    		button.myMobileButton {
+    			font-size: em(24);
+    			color: $darkBlue;
+    			width: em(200);
+    			padding: em(30) 0 em(40) em(40);
+    			margin: 0 auto;
+    			&:before {
+    				display: none;
+    			}
+    			&:after {
+    				display: none;
+    			}
+    		}
+        }
+    	ul {
+    		display: block;
+    	}
+	}
+	.bigScreen{
+	    .opidNunaTakki{
+	    	margin: 1px 0 7px 25px;
+			margin-left: 0;
+		}
+	}
+
+	.bigTimeInfo{
+		width: 100%;
+		margin-left: 0;
+		.open{
+			display: inline-flex;
+		}
+	}
+}
+@media only screen and (max-width: 763px){
+	.cardsBig{
+		margin-left: 27px;
+	}
+}
+/* for phone */
+@media only screen and (max-width: 420px){
+	.cardsSmall{
+		display: none;
+	}
+	.cardsBig{
+		display: block;
+		margin-left: 0;
+	}
+	.jumbotron_forsida {
+    	height: 150px;
+    	background-size: 100% 150px;
+    	img {
+    		height: 40px;
+		    margin-top: 55px;
+		}
+	}
+	.leitar-input {
+		border-left: em(50) solid $neonGreen;
+		height: em(60);
+	}
+	.tt-dataset {
+		border-left: em(60) solid $neonGreen;
+	}
+
+	.underLine{
+		width: 100%;
+	}
+	.bigPlaceInfo{
+		width: 100%;
+	}
+	.bigTimeInfo{
+		width: 100%;
+		margin-left: 0;
+		.open{
+			display: inline-flex;
+		}
+	}
+	.footer{
+		display: inline-flex;
+		.pull-right{
+			margin-left: 70px;
+		}
+	}
+}

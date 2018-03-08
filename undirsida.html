@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    	<title>Hofsós</title>
+        <meta name="description" content="An interactive getting started guide for Edge Code CC.">
+        <link rel="javaScript" type="text/javascript" href="script.js">
+        
+        <!--Jq-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+        <!--Bootstrap-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!--My CSS-->
+        <link rel="stylesheet" href="dist/styles.css">
+      
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <!--Mobile first-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<!--haus-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  	<div class="container-fluid">
+			    <div class="navbar-header theLogo">
+		      		<a class="navbar-brand" href="index.html">
+		      			<img src="icon/logo.svg" class="hofsosLogo">
+		      		</a>
+		    	</div>
+
+		    	<!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="theSearch" id="bs-example-navbar-collapse-1">
+			    	<a class="hofsosSearch navbar-right" id="hofsosSearch">
+			    		<img id="iconSearchImg"src="icon/iconSearchWhite.svg">
+			    	</a>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+
+		<div id="hofsosSearchDropdown">
+			<div class="container downUnderNav">
+				<div class="ui-widget">
+	                <div id="the-basics">
+	                    <form>
+	                        <input class="typeahead form-controle leitar-input" type="text" placeholder="Hvert viltu fara í sund?">
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+
+		<div class="whatToBlur">
+			<!--Jumbatron-->
+			<div class="jumbotron jumbotron_undirsida">
+				<div class="container">
+					<h2>Hofsós Laug</h2>
+				</div>
+	        </div>
+
+
+	        <!--Basic Info-->
+	        <div class="hofsosInfo">
+	        	<div class="container">
+	        		<div class="row">
+	        			<div class="col-md-6 col-sm-12 pull-right">
+	        				<a href="javascript: void(0);" class="closest-events_i no-hand-cursor inview">
+								<div class="line-1"><i></i></div>
+								<div class="line-2"><i></i></div>
+								<div class="line-3"><i></i></div>
+								<div class="line-4"><i></i></div>
+							</a>
+	        				<div class="hofsosInfoText">
+								<h3>Laugin við sjávarbakkann</h3>
+								<p class="efstaLinan">Sundlaug Hofsós - 565 Hofsós</p> 
+								<a href="#" class="webAddress">www.sundlaughofsos.is</a>
+						
+								<div class="lineBetween"></div>
+
+								<a href="#">sundhofsos@skagafjordur.is</a>
+								<p>Sími: 455-6070</p>
+
+								<div class="seeOnMap">	
+									<a href="#"><p class="map">Sjá á korti <b class="glyphicon glyphicon-map-marker"></b></p></a>
+								</div>
+							</div>
+	        			</div>
+	        			<div class="col-md-6 col-sm-12 imgInfo">
+	        				<img src="images/hofsosLaug3.jpg">
+	        			</div>
+	        		</div>
+				</div>	
+	        </div>
+
+
+	        <!--Opening hours-->
+	        <div class="container">
+		        <div class="OpeningHour">
+		        	<h3>Afgreiðslutími</h3>
+		        	<div class="row">
+		        		<div class="col-md-6">
+		        			<h4>Vetraropnun</h4>
+		        			<p>Mánudaga - föstudaga 07:05 - 13:05  og 17:15 - 20:15</p>
+		        			<p>Laugardaga og sunnudaga: 11:00 - 15:00</p>
+		        		</div>
+		        		<div class="col-md-6">
+		        			<h4>Sumarið 2015 - til 25. ágúst</h4>
+		        			<p>Opið alla daga frá 09:00 - 21:00</p>
+		        			<p>Sumaropnun tekur gildi mánudaginn 18.maí</p>
+		        		</div>
+		        	</div>
+		        </div>
+		    </div>
+
+
+	        <!--Price-->
+	        <div class="hofsosPriceInfo">
+	        	<div class="container">
+	        		<div class="row">
+	        			<div class="col-md-6 col-sm-12 pull-right">
+	        				<img class="hofsosPricePic" src="images/hofsosLaug2.jpeg">
+	        			</div>
+	        			<div class="col-md-6 col-sm-12">
+	        				<a href="javascript: void(0);" class="closest-events_i_white no-hand-cursor inview">
+								<div class="line-1_white"><i></i></div>
+								<div class="line-2_white"><i></i></div>
+								<div class="line-3_white"><i></i></div>
+								<div class="line-4_white"><i></i></div>
+							</a>
+	        				<div class="hofsosPriceText">
+								<h3>Verðskrá</h3>
+								<div class="priceOne">
+									<p>Frá 1. janúar 2015 <hr></p>
+									<p>Börn að 18 ára aldri búsett í sveitarfélaginu frítt gegn framvísun þjónustukorts <br> 
+									Önnur börn 0-6 ára kr. 0 <br>
+									Önnur börn yngri en 18 ára kr. 250 <br>
+									10 miða kort barna kr. 1.650</p>
+								</div>
+								<div class="priceTwo">
+									<p>Eldri borgarar búsettir í sveitarfélaginu frítt gegn framvísun þjónustukorts <br>
+									Öryrkjar búsettir í sveitarfélaginu frítt gegn framvísun þjónustukorts <br></p>
+									<p>Aðrir öryrkjar kr. 250 <br>
+									Fullorðnir í sund/gufu kr. 600 <br>
+									Klukkutíma einkatími í gufu kr. 4.500 <br>
+									10 miða kort fullorðinna kr. 4.500 <br>
+									30 miða kort fullorðinna kr. 9.500 <br>
+									Árskort fullorðinna kr. 30.500 </p>
+								</div>
+								<div class="priceThree">
+									<p>Sundföt kr. 600<br>
+									Handklæði kr. 600<br>
+									Gufubað og infrarauð sauna innifalin í aðgangi.<br>
+									Endurútgáfa þjónustukorts kr. 550 </p>
+								</div>
+							</div>
+	        			</div>		
+	        		</div>
+				</div>
+	        </div>
+
+
+	        <!--List of things in the pool-->
+	        <div class="ListOfThingsInThePool">
+	        	<div class="container">
+		        	<!--Carousel-->
+		        	<div class="owl-carousel">
+					    <div class="item">
+					    	<img src="icon/gufa.svg">
+	 						<h3>Gufubað</h3>
+	 						<div class="lineBetweenIcon"></div>
+	 						<p>Í sundlauginni má finna ekta finnskt gufubað sem yljar inn að beini. </p>
+					    </div>
+					    <div class="item">
+					    	<img src="icon/pottur.svg">
+						 	<h3>Heitur pottur</h3>
+						 	<div class="lineBetweenIcon"></div>
+						 	<p>Heiti potturinn er 40° heitur og fullkominn staður til þess að slaka á eða spjalla.</p>
+						</div>
+					    <div class="item">
+					    	<img src="icon/vadlaug.svg">
+						 	<h3>Vaðlaug</h3>
+						 	<div class="lineBetweenIcon"></div>
+						 	<p>Í sundlauginni er 32° heit vaðlaug með lítilli vaðlaug fyrir þau yngstu.</p>
+					    </div>
+					    <div class="item">
+						    <img src="icon/innilaug.svg">
+						 	<h3>Innilaug</h3>
+						 	<div class="lineBetweenIcon"></div>
+						 	<p>Við erum með innilaug sem getur verið gott að svamla í þegar Kári blæs hvað mest.</p>
+					    </div>
+					    <div class="item">
+						    <img src="icon/rennibraut.svg">
+						 	<h3>Rennibraut</h3>
+						 	<div class="lineBetweenIcon"></div>
+						 	<p>Rennibrautin okkar sívinsæla er alltaf á sínum stað fyrir hressa krakka og fullorðna.</p>
+					    </div>
+					    <div class="item">
+						    <img src="icon/utilaug.svg">
+						 	<h3>Útilaug</h3>
+						 	<div class="lineBetweenIcon"></div>
+						 	<p>Aðallaugin er 25m löng og frábært til að bursla í eða taka góðann sundsprett.</p>
+					    </div>
+					    <div class="item">
+						    <img src="icon/stokkbretti.svg">
+						 	<h3>Stökkbretti</h3>
+						 	<div class="lineBetweenIcon"></div>
+						 	<p>Sundlaugin er ein af fáum sem bjóða upp á alvöru dýfingar af bretti.</p>
+					    </div>
+					</div>
+				</div>
+	        </div>
+
+
+	        <!--littlebit about the pool-->
+	        <div class="moreAboutHofsos">
+	        	<div class="container">
+		        	<div class="row">
+		        		<div class="col-md-6">
+		        			<img src="images/hofsosLaug.jpg">
+		        		</div>
+		        		<div class="col-md-6">
+		        			<a href="javascript: void(0);" class="closest-events_i no-hand-cursor inview">
+								<div class="line-1"><i></i></div>
+								<div class="line-2"><i></i></div>
+								<div class="line-3"><i></i></div>
+								<div class="line-4"><i></i></div>
+							</a>
+		        			<div class="detailAboutHofsos">
+				        		<p>Sundlaugin á Hofsósi er á sjávarbakka sunnarlega í þorpinu. Náttúrufegurðin nýtur sín allt um kring og útsýnið yfir Skagafjörðinn er engu líkt. Þegar synt er norður virðist vatnsflöturinn renna saman við hafflötinn líkt og hægt væri að synda óhindrað til Drangeyjar. Hver veit nema maður mæti Gretti sterka þar á sundi.</p>
+				        	</div>
+		        		</div>
+		        	</div>
+	        	</div>
+	        </div>
+	        <!--footer-->
+	        <footer>
+	        	<div class="container">
+		            <div class="row footer">
+		            	<div class="col-md-6">
+		                    <p><b class="glyphicon glyphicon-copyright-mark"></b> sundlaugar.is</p>
+		                </div>
+		                <div class="col-md-6">
+		                    <p class="pull-right"><a href="www.facebook.com"><img src="icon/facebook.svg"></a> <a href="#"><img src="icon/mail.svg"></a> sundlaugar@sundlaugar.is</p>
+		                </div>
+		            <div>
+		        </div>
+	        </footer>
+	    </div>
+
+		<script src="js/owl.carousel.min.js"></script>
+	    <script src="js/modernizr.custom.69789.js"></script>
+	    <script src="js/typehead.bundl.js"></script>
+        <script src="js/script.js"></script>
+	</body>
+</html>

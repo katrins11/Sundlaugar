@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="47px" height="30px" viewBox="0 0 47 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>mail-envelope-closed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Stór" sketch:type="MSArtboardGroup" transform="translate(-978.000000, -1547.000000)" fill="#375874">
+            <g id="mail" sketch:type="MSLayerGroup" transform="translate(978.000000, 1547.000000)">
+                <g id="Group" sketch:type="MSShapeGroup">
+                    <g id="Page-1">
+                        <g id="icon-6-mail-envelope-closed">
+                            <path d="M2.46563854,2.38859874 C2.10198831,2.73261384 1.875,3.22069663 1.875,3.76283531 L1.875,26.2371647 C1.875,26.7804154 2.09842434,27.270072 2.46207538,27.6144998 L2.46207538,27.6144998 L16.96875,15 L2.46563854,2.38859874 L2.46563854,2.38859874 L2.46563854,2.38859874 L2.46563854,2.38859874 Z M44.4129246,2.38550034 C44.7765757,2.72992804 45,3.21958472 45,3.76283531 L45,26.2371647 C45,26.7793033 44.7730117,27.2673862 44.4093615,27.6114013 L29.90625,15 L44.4129246,2.38550034 L44.4129246,2.38550034 L44.4129246,2.38550034 Z M28.5034307,16.2198429 L42.1875,28.125 L4.6875,28.125 L18.3715693,16.2198429 L23.4375,20.625 L28.5034307,16.2198429 L28.5034307,16.2198429 L28.5034307,16.2198429 Z M3.75674036,0 C1.68194994,0 0,1.6772133 0,3.73886302 L0,26.2611369 C0,28.326054 1.66830607,30 3.75674036,30 L43.1182596,30 C45.19305,30 46.875,28.3227866 46.875,26.2611369 L46.875,3.73886302 C46.875,1.673946 45.206694,0 43.1182596,0 L3.75674036,0 L3.75674036,0 L3.75674036,0 Z M23.4375,18.1875229 L42.1875,1.875 L4.6875,1.875 L23.4375,18.1875229 L23.4375,18.1875229 L23.4375,18.1875229 Z" id="mail-envelope-closed"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

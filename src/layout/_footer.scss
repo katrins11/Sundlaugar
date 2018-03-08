@@ -1,0 +1,10 @@
+footer{
+	border-top: em(2) solid $darkBlue;
+	@include textLayout(footertext);
+	.footer{
+		margin-top: em(20);
+	}
+	img{
+		height: em(20);
+	}
+}

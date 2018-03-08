@@ -1,0 +1,895 @@
+/* head */
+.navbar-default{
+	background-color: $white;
+}
+.hofsosLogo{
+	height: 30px;
+}
+.hofsosSearch{
+	height: 50px;
+	width: 50px;
+	margin-right: 50px;
+	background-color: $darkBlue;
+  display: inline-block;
+	img{
+		height: 40px;
+		margin: 5px;
+	}
+}
+.theLogo{
+  float: left;
+}
+.theSearch{
+  float: right;
+}
+#hofsosSearchDropdown{
+	border-top: em(1) solid #F5F5F5;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    background: $white;
+    display: none;
+    form{
+    	margin-bottom: 50px;
+    }
+}
+.blur {
+     -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    background-color: rgba(55, 88, 116, 0.5);
+}
+
+/* jumbotron */
+.jumbotron_undirsida{
+	margin-top: 50px;
+	height: 300px;
+	background-image: url(../images/hofsosLaugPool.jpg);
+	background-size: 100% 300px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+
+	h2{
+		color: white;
+		@include textLayout(h2BigCard);
+		margin-top: 180px;
+		width: 140px;
+		padding-left: 10px;
+		border-bottom: 2px solid $neonGreen;
+	}
+}
+
+/* basic info */
+.hofsosInfo{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	img{
+		width: 450px;
+		margin-left: 110px;
+	}
+}
+.hofsosInfoText {
+	margin-top: 150px;
+   	h3{
+   		@include textLayout(h3Hofsos);
+   	}
+   	p{
+   		@include textLayout(pHofsos);
+   	}
+   	a{
+   		@include textLayout(pHofsos);
+   	}
+   	.webAddress{
+   		color: $neonPink;
+   		@include textLayout(aWebsideHofsos);
+		&:hover {
+			cursor: pointer;
+			color: $neonPinkHover;
+		}
+   	}
+   	.map {
+		transform: rotate(-90deg);
+		position: absolute;
+		right: em(120);
+		bottom: em(40);
+		font-size: em(15);
+		letter-spacing: em(1);
+		height: em(90);
+		b{
+			transform: rotate(90deg);
+			margin-left: em(15);
+			margin-bottom: em(4);
+			color: $neonGreen;
+		}
+	}
+	.lineBetween{
+		background: $darkBlue; 
+		width: em(60);
+		height: em(2);
+		margin-top: em(10);
+		margin-bottom: em(10);
+	}
+	.efstaLinan{
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+.OpeningHour{
+	border: 2px solid $neonGreen;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	h3{
+		margin-bottom: 30px;
+		@include textLayout(h3Hofsos);
+	}
+	h4{
+		@include textLayout(h4Hofsos);
+	}
+	p{
+		@include textLayout(pHofsos);
+	}
+}
+
+
+
+/*Price*/
+.hofsosPriceInfo{
+	background-color: $darkBlue;
+	color: $white;
+	.hofsosPricePic{
+		margin-top: 50px;
+		width: 500px;
+		margin-left: -40px;
+	}
+	.hofsosPriceText{
+		h3{
+			@include textLayout(h3HofsosWhite);
+		}
+		p{
+			@include textLayout(pHofsosWhite);
+		}
+		.priceOne{
+			width: em(285);
+		}
+		.priceTwo{
+			width: em(265);
+			float: right;
+			margin-right: em(50);
+		}
+		.priceThree{
+			width: em(250);
+			margin-top: em(120);
+		}
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	padding-top: em(100);
+	padding-bottom: em(100);
+	margin-bottom: em(100);
+}
+
+
+/* List of things in the area*/
+.ListOfThingsInThePool{
+	.item{
+		text-align: center;
+		img{
+			height: 150px;
+		}
+		h3{
+			@include textLayout(h3Hofsos, $black);
+		}
+		p{
+			width: 250px;
+			margin: 0 auto;
+			@include textLayout(pHofsos);
+		}
+		.lineBetweenIcon{
+			background: $neonPink; 
+			width: em(60);
+			height: em(3);
+			margin: 0 auto;
+			margin-top: em(10);
+			margin-bottom: em(10);
+		}
+	}
+	margin-bottom: 100px;
+}
+
+   
+.moreAboutHofsos{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	img{
+		width: 300px;
+		margin-left: 220px;
+	}
+	.detailAboutHofsos{
+		width: 380px;
+		p{
+			margin-top: 180px;
+			@include textLayout(pHofsos);
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*OWL CAROUSEL*/
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hér byrjar scss fyrir linur utan um texta */
+
+.closest-events_i {
+	margin-top: em(120);
+	right: em(160);
+    z-index: 9999;
+    width: em(600);
+    height: em(280);
+    position: absolute;
+    display: block
+}
+
+@media only screen and (max-width: 767px) {
+    .closest-events_i {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+.no-touch .closest-events_i:hover .line-1 i {
+    transition: width 0.4s ease-out
+}
+
+.no-touch .closest-events_i:hover .line-2 i {
+    transition: height 0.4s ease-out 0.4s
+}
+
+.no-touch .closest-events_i:hover .line-3 i {
+    transition: width 0.4s ease-out 0.8s
+}
+
+.no-touch .closest-events_i:hover .line-4 i {
+    transition: height 0.4s ease-out 1.2s
+}
+
+.no-touch .closest-events_i:hover .line-1 i,
+.no-touch .closest-events_i:hover .line-2 i,
+.no-touch .closest-events_i:hover .line-3 i,
+.no-touch .closest-events_i:hover .line-4 i {
+    width: 100%;
+    height: 100%
+}
+
+
+.line-2,
+.line-4 {
+    width: 4px;
+    height: 0;
+    background: transparent;
+    position: absolute
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+    .line-2,
+    .line-4 {
+        height: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .line-2,
+    .line-4 {
+        height: 100%
+    }
+}
+
+.line-2 i,
+.line-4 i {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: $darkBlue;
+}
+
+.line-1,
+.line-3 {
+    height: 4px;
+    width: 0;
+    background: transparent;
+    position: absolute
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+    .line-1,
+    .line-3 {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .line-1,
+    .line-3 {
+        width: 100%
+    }
+}
+
+.line-1 i,
+.line-3 i {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: $darkBlue;
+}
+
+.line-1 {
+    left: 0;
+    top: 0
+}
+
+.inview .line-1 {
+    transition: background 0.4s ease, width 0.4s ease-out;
+    width: 100%
+}
+
+.line-1 i {
+    left: 0;
+    top: 0;
+    transition: width 0.4s ease-out 1.2s
+}
+
+.line-2 {
+    top: 0;
+    right: 0
+}
+
+.inview .line-2 {
+    transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+    height: 100%
+}
+
+.line-2 i {
+    top: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0.8s
+}
+
+.line-3 {
+    right: 0;
+    bottom: 0
+}
+
+.inview .line-3 {
+    transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+    width: 100%
+}
+
+.line-3 i {
+    right: 0;
+    top: 0;
+    transition: width 0.4s ease-out 0.4s
+}
+
+.line-4 {
+    bottom: 0;
+    left: 0
+}
+
+.inview .line-4 {
+    transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+    height: 100%
+}
+
+.line-4 i {
+    bottom: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0s
+}
+
+
+
+
+
+
+
+
+
+
+/*WHITE*/
+/* Hér byrjar scss fyrir linur utan um texta */
+
+.closest-events_i_white {
+	margin-top: em(40);
+	left: em(5);
+    z-index: 9999;
+    width: em(700);
+    height: em(480);
+    position: absolute;
+    display: block
+}
+
+@media only screen and (max-width: 767px) {
+    .closest-events_i_white {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i {
+    transition: width 0.4s ease-out
+}
+
+.no-touch .closest-events_i_white:hover .line-2_white i {
+    transition: height 0.4s ease-out 0.4s
+}
+
+.no-touch .closest-events_i_white:hover .line-3_white i {
+    transition: width 0.4s ease-out 0.8s
+}
+
+.no-touch .closest-events_i_white:hover .line-4_white i {
+    transition: height 0.4s ease-out 1.2s
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i,
+.no-touch .closest-events_i_white:hover .line-2_white i,
+.no-touch .closest-events_i_white:hover .line-3_white i,
+.no-touch .closest-events_i_white:hover .line-4_white i {
+    width: 100%;
+    height: 100%
+}
+
+
+.line-2_white,
+.line-4_white {
+    width: 4px;
+    height: 0;
+    background: transparent;
+    position: absolute
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+    .line-2_white,
+    .line-4_white {
+        height: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .line-2_white,
+    .line-4_white {
+        height: 100%
+    }
+}
+
+.line-2_white i,
+.line-4_white i {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: $white;
+}
+
+.line-1_white,
+.line-3_white {
+    height: 4px;
+    width: 0;
+    background: transparent;
+    position: absolute
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+    .line-1_white,
+    .line-3_white {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .line-1_white,
+    .line-3_white {
+        width: 100%
+    }
+}
+
+.line-1_white i,
+.line-3_white i {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: $white;
+}
+
+.line-1_white {
+    left: 0;
+    top: 0
+}
+
+.inview .line-1_white {
+    transition: background 0.4s ease, width 0.4s ease-out;
+    width: 100%
+}
+
+.line-1_white i {
+    left: 0;
+    top: 0;
+    transition: width 0.4s ease-out 1.2s
+}
+
+.line-2_white {
+    top: 0;
+    right: 0
+}
+
+.inview .line-2_white {
+    transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+    height: 100%
+}
+
+.line-2_white i {
+    top: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0.8s
+}
+
+.line-3_white {
+    right: 0;
+    bottom: 0
+}
+
+.inview .line-3_white {
+    transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+    width: 100%
+}
+
+.line-3_white i {
+    right: 0;
+    top: 0;
+    transition: width 0.4s ease-out 0.4s
+}
+
+.line-4_white {
+    bottom: 0;
+    left: 0
+}
+
+.inview .line-4_white {
+    transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+    height: 100%
+}
+
+.line-4_white i {
+    bottom: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0s
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+  .hofsosInfo{
+    img{
+      margin-left: 0;
+    }
+  }
+  .moreAboutHofsos{
+    img{
+      margin-left: 25%;
+    }
+    .closest-events_i {
+      margin-left: 20%;
+    }
+  }
+  .detailAboutHofsos{
+    margin-left: -12%;
+  }
+
+}
+@media only screen and (max-width: 992px){
+  .hofsosInfoText{
+    margin-left: 12%;
+  }
+  .hofsosPriceInfo{
+    .hofsosPriceText{
+      .priceTwo{
+        margin-right: 15%;
+      }
+    }
+    .hofsosPricePic{
+      margin-left: 0;
+    }
+  }
+  .moreAboutHofsos{
+    .closest-events_i {
+      margin-top: em(-90);
+    }
+  }
+  .detailAboutHofsos{
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 768px){
+  .closest-events_i {
+    display: none;
+  }
+  
+  .pull-right {
+    float: left!important;
+  }
+  .hofsosInfo{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .hofsosPriceInfo{
+    padding-top: em(20); 
+    padding-bottom: em(20);
+    .pull-right {
+      margin-left: 10%;
+      margin-bottom: 20px;
+    }
+    .hofsosPriceText {
+      margin-left: 10%;
+    }
+  }
+      
+  .hofsosInfoText{
+    border: 3px solid $darkBlue;
+    width: 500px;
+    height: 173px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h3, p, .lineBetween, a{
+      margin-left: 35px;
+    }
+    .map{
+      bottom: em(90);
+      right: em(50);
+    }
+  }
+  .imgInfo{
+      margin-left: 14%;
+    }
+
+  .moreAboutHofsos .detailAboutHofsos p {
+    margin-top: em(50);
+    border: 3px solid $darkBlue;
+    padding: em(15);
+  }
+  .ListOfThingsInThePool .item p {
+    width: 200px;
+  }
+  footer .footer {
+    display: inline-flex;
+  }
+}
+@media only screen and (max-width: 580px){
+  .hofsosSearch {
+    margin-right: 10px;
+  }
+  .jumbotron_undirsida {
+    height: 200px;
+    h2{
+      margin-top: 100px;
+    }
+  }
+  .hofsosInfoText {
+    border: 3px solid #375874;
+    width: 370px;
+    height: 195px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .hofsosInfoText{
+    h3, p, .lineBetween, a {
+      margin-left: 20px;
+    }
+  }
+  .hofsosInfo img {
+    width: 300px;
+  }
+  .imgInfo {
+    margin-left: 9%;
+  }
+
+  .hofsosPriceInfo {
+    .hofsosPricePic {
+      margin-top: 50px;
+      width: 300px;
+    }
+    .hofsosPriceText{
+      .priceTwo {
+        float: none;
+      }
+      .priceThree {
+        margin-top: em(5);
+      }
+    }
+  }
+
+  .moreAboutHofsos{ 
+    img {
+      margin-left: 10%;
+    }
+    .detailAboutHofsos {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+  .detailAboutHofsos {
+    margin-left: 0;
+  }
+
+}

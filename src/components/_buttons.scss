@@ -1,0 +1,18 @@
+button.opidNunaTakki {
+  float: right;
+  @include textLayout(pButtonText);
+  padding: em(8) em(17) ;
+  height: em(38);
+  margin: 6px 0 7px 25px;
+  @include hoverOnButton;
+}
+
+.fleira{
+	@include textLayout(pButtonText);
+  margin-bottom: em(20);
+  @include hoverOnButton;
+  //center
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

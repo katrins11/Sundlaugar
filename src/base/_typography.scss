@@ -1,0 +1,31 @@
+/* Stillingar fyrir fonta - avenir-next */
+@font-face {
+  font-family: 'font-demi';
+  src: url('../fontar/avenirNext/avenirnextltpro-demi-webfont.eot'), /* IE9 Compat Modes */
+       url('../fontar/avenirNext/avenirnextltpro-demi-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fontar/avenirNext/avenirnextltpro-demi-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fontar/avenirNext/avenirnextltpro-demi-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'font-regular';
+  src: url('../fontar/avenirNext/avenirnextltpro-regular-webfont.eot'), /* IE9 Compat Modes */
+       url('../fontar/avenirNext/avenirnextltpro-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fontar/avenirNext/avenirnextltpro-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fontar/avenirNext/avenirnextltpro-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'font-ultlt';
+  src: url('../fontar/avenirNext/AvenirNextLTPro-UltLt.eot'), /* IE9 Compat Modes */
+       url('../fontar/avenirNext/AvenirNextLTPro-UltLt.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fontar/avenirNext/AvenirNextLTPro-UltLt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fontar/avenirNext/AvenirNextLTPro-UltLt.svg') format('svg'); /* Legacy iOS */
+}
+
+/* Stillingar fyrir fonta - bebas */
+@font-face {
+  font-family: 'font-bebas';
+  src: url('../fontar/bebasNeue/bebas_neue_regular-webfont.eot'), /* IE9 Compat Modes */
+       url('../fontar/bebasNeue/bebas_neue_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fontar/bebasNeue/bebas_neue_regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fontar/bebasNeue/bebas_neue_regular-webfont.woff2') format('woff2'); /*  */
+}

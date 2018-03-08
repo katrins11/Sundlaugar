@@ -1,0 +1,277 @@
+@mixin textLayout($text, $color: #fff) {
+
+	 // adal texti big cards
+	@if $text == pBigCard {
+		font-family: 'font-regular';
+		font-size: em(16);
+		color: $darkBlue;
+		line-height: em(24);
+	}
+	// fyrirsagna texti cards
+	@if $text == h3BigCard { 
+		font-family: 'font-regular';
+		font-size: em(20);
+		color: $darkBlue;
+	}
+
+	// leitar nav 
+	@if $text == aNav { 
+		font-family: 'font-demi';
+		font-size: em(14);
+		color: $transparentBlue;
+		text-transform: uppercase;
+		&:hover {
+			color: $darkBlue;
+		}
+	}
+	@if $text == pLeitDropdown { 
+		font-family: 'font-regular';
+		font-size: em(20);
+		color: $darkBlue;
+		line-height: em(50);
+	}
+	// leitar input textinn
+	@if $text == pLeit { 
+		font-family: 'font-regular';
+		font-size: em(24);
+		color: $lightGray;
+	}
+	// fyrirsögn á kortum
+	@if $text == h2BigCard { 
+		font-family: 'font-bebas';
+		font-size: em(32);
+		color: $color;
+	}
+	@if $text == h2SmallCard { 
+		font-family: 'font-bebas';
+		font-size: em(20);
+		color: $color;
+	}
+
+	//button texti
+	@if $text == pButtonText { 
+		font-family: 'font-demi';
+		font-size: em(14);
+		color: $darkBlue;
+		text-transform: uppercase;
+		&:hover {
+			color: $color;
+		}
+	}
+	//footer text
+	@if $text == footertext {
+		font-family: 'font-demi';
+		font-size: em(12);
+		color: $darkBlue;
+	}
+
+	//Small cards pool Name
+	@if $text == smallCardh2White { 
+		font-family: 'font-regular';
+		font-size: em(16);
+		color: $white;
+	}
+	@if $text == pSmallCard { 
+		font-family: 'font-regular';
+		font-size: em(18);
+		color: $lightGray;
+	}
+	//ul
+	@if $text == ulSmallCard { 
+		font-family: 'font-demi';
+		font-size: em(14);
+		color: $black;
+		line-height: em(30);
+	}
+
+	//Hofsos h2 tags
+	@if $text == h3Hofsos { 
+		font-family: 'font-regular';
+		font-size: em(26);
+		color: $darkBlue;
+		text-transform: uppercase;
+	}
+	//Hofsos h2 tags
+	@if $text == h3HofsosWhite { 
+		font-family: 'font-regular';
+		font-size: em(26);
+		color: $white;
+		text-transform: uppercase;
+	}
+	//Hofsos h4 text
+	@if $text == h4Hofsos { 
+		font-family: 'font-regular';
+		font-size: em(18);
+		color: $lightGray;
+	}
+	//Hofsos p text
+	@if $text == pHofsos { 
+		font-family: 'font-regular';
+		font-size: em(14);
+		color: $black;
+	}
+	//Hofsos p text white
+	@if $text == pHofsosWhite { 
+		font-family: 'font-regular';
+		font-size: em(14);
+		color: $white;
+	}
+	//Hofsos pink webside link
+	@if $text == aWebsideHofsos { 
+		font-family: 'font-regular';
+		font-size: em(14);
+		color: $neonPink;
+	}
+
+}
+
+
+@mixin bigCardInfo {
+	position: relative;
+	height: 400px;
+	margin-bottom: em(35);
+	background-size: 100% 400px;
+}
+
+@mixin smallCardInfo {
+	position: relative;
+	height: 200px;
+	background-size: 100% 200px;
+	h2 {
+		@include textLayout(smallCardh2White);
+		padding-top: 7px;
+		margin-left: 10px;
+		b{
+			color: $neonGreen;
+			margin-right: 7px;
+		}
+	}
+	p {
+		padding-bottom: 8px;
+		border-bottom: 2px solid $neonPink;
+	}
+	.smallCardLine {
+		margin-top: 5px;
+    	margin-bottom: 5px;
+    	width: 50px;
+    	border: 0;
+	}
+}
+
+@mixin smallCardInfoTime {
+	p {
+		@include textLayout(pSmallCard);
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+	ul {
+		list-style-type: none;
+		padding-left: 15px;
+		@include textLayout(ulSmallCard);
+	}
+}
+
+@mixin hoverLinaFlokkar {
+	button {
+		&:focus {
+			outline: none;
+		}
+		background: #fff;
+		border: none;
+		display: inline-block;
+		margin-left: em(20);
+		margin-right: em(50);
+		margin-top: em(20);
+	    position: relative;
+	    padding: 0 0 em(6) 0;
+		@include textLayout(aNav);
+	}
+	button:before, button.active:before{
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    height: em(6);
+	    width: 0;
+	    transition: width 0s ease, background .5s ease;
+	}
+	button:after, button.active:after{
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    height: em(6);
+	    width: 0;
+	    background: $neonGreen;
+	    transition: width .5s ease;
+	}
+	button:hover:before, button.active:before{
+	    width: 100%;
+	    background: $neonGreen;
+	    transition: width .5s ease;
+	}
+	button:hover:after, button.active:after{
+	    width: 100%;
+	    background: transparent;
+	    transition: all 0s ease;
+	}
+	button.active{
+		color: $darkBlue;
+	}
+}
+
+@mixin hoverLineOpentime{
+	&:before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: em(110);
+	    height: em(3);
+	    width: 0;
+	    transition: width 0s ease, background .7s ease;
+	}
+	&:after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    height: em(3);
+	    bottom: em(175);
+	   	left: em(85);
+	    width: 0;
+	    background: $neonPink;
+	    transition: width .7s ease;
+	}
+	&:hover:before {
+	    width: 59%;
+	    background: $neonPink;
+	    bottom: em(175);
+	    left: em(85);
+	    transition: width .7s ease;
+	    z-index: 9999;
+	}
+	&:hover:after {
+	    width: 58%;
+	    background: transparent;
+	    transition: all 0s ease;
+	}
+} 
+
+@mixin hoverOnButton{
+	background: #FFF;
+    border: 2px solid $neonPink;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 $neonPink;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	&:hover, &.active{
+		box-shadow: inset em(250) 0 0 0 $neonPink;
+    	color: $white;
+	}
+}

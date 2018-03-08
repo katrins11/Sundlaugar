@@ -1,0 +1,17 @@
+{
+  "name": "sass-convert",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "foundation-sites": "^6.1.2",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.1.1"
+  }
+}

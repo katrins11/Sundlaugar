@@ -1,0 +1,2096 @@
+@charset "UTF-8";
+/***** Colors *****/
+/* Stillingar fyrir fonta - avenir-next */
+@font-face {
+  font-family: 'font-demi';
+  src: url("../fontar/avenirNext/avenirnextltpro-demi-webfont.eot"), url("../fontar/avenirNext/avenirnextltpro-demi-webfont.woff") format("woff"), url("../fontar/avenirNext/avenirnextltpro-demi-webfont.ttf") format("truetype"), url("../fontar/avenirNext/avenirnextltpro-demi-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'font-regular';
+  src: url("../fontar/avenirNext/avenirnextltpro-regular-webfont.eot"), url("../fontar/avenirNext/avenirnextltpro-regular-webfont.woff") format("woff"), url("../fontar/avenirNext/avenirnextltpro-regular-webfont.ttf") format("truetype"), url("../fontar/avenirNext/avenirnextltpro-regular-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'font-ultlt';
+  src: url("../fontar/avenirNext/AvenirNextLTPro-UltLt.eot"), url("../fontar/avenirNext/AvenirNextLTPro-UltLt.woff") format("woff"), url("../fontar/avenirNext/AvenirNextLTPro-UltLt.ttf") format("truetype"), url("../fontar/avenirNext/AvenirNextLTPro-UltLt.svg") format("svg");
+  /* Legacy iOS */
+}
+
+/* Stillingar fyrir fonta - bebas */
+@font-face {
+  font-family: 'font-bebas';
+  src: url("../fontar/bebasNeue/bebas_neue_regular-webfont.eot"), url("../fontar/bebasNeue/bebas_neue_regular-webfont.woff") format("woff"), url("../fontar/bebasNeue/bebas_neue_regular-webfont.ttf") format("truetype"), url("../fontar/bebasNeue/bebas_neue_regular-webfont.woff2") format("woff2");
+  /*  */
+}
+
+/* head */
+.navbar-default {
+  background-color: #ffffff;
+}
+
+.hofsosLogo {
+  height: 30px;
+}
+
+.hofsosSearch {
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+  background-color: #375874;
+  display: inline-block;
+}
+
+.hofsosSearch img {
+  height: 40px;
+  margin: 5px;
+}
+
+.theLogo {
+  float: left;
+}
+
+.theSearch {
+  float: right;
+}
+
+#hofsosSearchDropdown {
+  border-top: 0.0625em solid #F5F5F5;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  background: #ffffff;
+  display: none;
+}
+
+#hofsosSearchDropdown form {
+  margin-bottom: 50px;
+}
+
+.blur {
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  background-color: rgba(55, 88, 116, 0.5);
+}
+
+/* jumbotron */
+.jumbotron_undirsida {
+  margin-top: 50px;
+  height: 300px;
+  background-image: url(../images/hofsosLaugPool.jpg);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.jumbotron_undirsida h2 {
+  color: white;
+  font-family: 'font-bebas';
+  font-size: 2em;
+  color: #fff;
+  margin-top: 180px;
+  width: 140px;
+  padding-left: 10px;
+  border-bottom: 2px solid #19FFB3;
+}
+
+/* basic info */
+.hofsosInfo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hofsosInfo img {
+  width: 450px;
+  margin-left: 110px;
+}
+
+.hofsosInfoText {
+  margin-top: 150px;
+}
+
+.hofsosInfoText h3 {
+  font-family: 'font-regular';
+  font-size: 1.625em;
+  color: #375874;
+  text-transform: uppercase;
+}
+
+.hofsosInfoText p {
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #000000;
+}
+
+.hofsosInfoText a {
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #000000;
+}
+
+.hofsosInfoText .webAddress {
+  color: #F04A83;
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #F04A83;
+}
+
+.hofsosInfoText .webAddress:hover {
+  cursor: pointer;
+  color: #c93d60;
+}
+
+.hofsosInfoText .map {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  right: 7.5em;
+  bottom: 2.5em;
+  font-size: 0.9375em;
+  letter-spacing: 0.0625em;
+  height: 5.625em;
+}
+
+.hofsosInfoText .map b {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 0.9375em;
+  margin-bottom: 0.25em;
+  color: #19FFB3;
+}
+
+.hofsosInfoText .lineBetween {
+  background: #375874;
+  width: 3.75em;
+  height: 0.125em;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
+}
+
+.hofsosInfoText .efstaLinan {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.OpeningHour {
+  border: 2px solid #19FFB3;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.OpeningHour h3 {
+  margin-bottom: 30px;
+  font-family: 'font-regular';
+  font-size: 1.625em;
+  color: #375874;
+  text-transform: uppercase;
+}
+
+.OpeningHour h4 {
+  font-family: 'font-regular';
+  font-size: 1.125em;
+  color: #b6b6b6;
+}
+
+.OpeningHour p {
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #000000;
+}
+
+/*Price*/
+.hofsosPriceInfo {
+  background-color: #375874;
+  color: #ffffff;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em;
+  margin-bottom: 6.25em;
+}
+
+.hofsosPriceInfo .hofsosPricePic {
+  margin-top: 50px;
+  width: 500px;
+  margin-left: -40px;
+}
+
+.hofsosPriceInfo .hofsosPriceText {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hofsosPriceInfo .hofsosPriceText h3 {
+  font-family: 'font-regular';
+  font-size: 1.625em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hofsosPriceInfo .hofsosPriceText p {
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #ffffff;
+}
+
+.hofsosPriceInfo .hofsosPriceText .priceOne {
+  width: 17.8125em;
+}
+
+.hofsosPriceInfo .hofsosPriceText .priceTwo {
+  width: 16.5625em;
+  float: right;
+  margin-right: 3.125em;
+}
+
+.hofsosPriceInfo .hofsosPriceText .priceThree {
+  width: 15.625em;
+  margin-top: 7.5em;
+}
+
+/* List of things in the area*/
+.ListOfThingsInThePool {
+  margin-bottom: 100px;
+}
+
+.ListOfThingsInThePool .item {
+  text-align: center;
+}
+
+.ListOfThingsInThePool .item img {
+  height: 150px;
+}
+
+.ListOfThingsInThePool .item h3 {
+  font-family: 'font-regular';
+  font-size: 1.625em;
+  color: #375874;
+  text-transform: uppercase;
+}
+
+.ListOfThingsInThePool .item p {
+  width: 250px;
+  margin: 0 auto;
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #000000;
+}
+
+.ListOfThingsInThePool .item .lineBetweenIcon {
+  background: #F04A83;
+  width: 3.75em;
+  height: 0.1875em;
+  margin: 0 auto;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
+}
+
+.moreAboutHofsos {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.moreAboutHofsos img {
+  width: 300px;
+  margin-left: 220px;
+}
+
+.moreAboutHofsos .detailAboutHofsos {
+  width: 380px;
+}
+
+.moreAboutHofsos .detailAboutHofsos p {
+  margin-top: 180px;
+  font-family: 'font-regular';
+  font-size: 0.875em;
+  color: #000000;
+}
+
+/*OWL CAROUSEL*/
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* Hér byrjar scss fyrir linur utan um texta */
+.closest-events_i {
+  margin-top: 7.5em;
+  right: 10em;
+  z-index: 9999;
+  width: 37.5em;
+  height: 17.5em;
+  position: absolute;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .closest-events_i {
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+.no-touch .closest-events_i:hover .line-1 i {
+  -webkit-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+}
+
+.no-touch .closest-events_i:hover .line-2 i {
+  -webkit-transition: height 0.4s ease-out 0.4s;
+  transition: height 0.4s ease-out 0.4s;
+}
+
+.no-touch .closest-events_i:hover .line-3 i {
+  -webkit-transition: width 0.4s ease-out 0.8s;
+  transition: width 0.4s ease-out 0.8s;
+}
+
+.no-touch .closest-events_i:hover .line-4 i {
+  -webkit-transition: height 0.4s ease-out 1.2s;
+  transition: height 0.4s ease-out 1.2s;
+}
+
+.no-touch .closest-events_i:hover .line-1 i,
+.no-touch .closest-events_i:hover .line-2 i,
+.no-touch .closest-events_i:hover .line-3 i,
+.no-touch .closest-events_i:hover .line-4 i {
+  width: 100%;
+  height: 100%;
+}
+
+.line-2,
+.line-4 {
+  width: 4px;
+  height: 0;
+  background: transparent;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+  .line-2,
+  .line-4 {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .line-2,
+  .line-4 {
+    height: 100%;
+  }
+}
+
+.line-2 i,
+.line-4 i {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #375874;
+}
+
+.line-1,
+.line-3 {
+  height: 4px;
+  width: 0;
+  background: transparent;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+  .line-1,
+  .line-3 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .line-1,
+  .line-3 {
+    width: 100%;
+  }
+}
+
+.line-1 i,
+.line-3 i {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: #375874;
+}
+
+.line-1 {
+  left: 0;
+  top: 0;
+}
+
+.inview .line-1 {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out;
+  transition: background 0.4s ease, width 0.4s ease-out;
+  width: 100%;
+}
+
+.line-1 i {
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 1.2s;
+  transition: width 0.4s ease-out 1.2s;
+}
+
+.line-2 {
+  top: 0;
+  right: 0;
+}
+
+.inview .line-2 {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  height: 100%;
+}
+
+.line-2 i {
+  top: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0.8s;
+  transition: height 0.4s ease-out 0.8s;
+}
+
+.line-3 {
+  right: 0;
+  bottom: 0;
+}
+
+.inview .line-3 {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  width: 100%;
+}
+
+.line-3 i {
+  right: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 0.4s;
+  transition: width 0.4s ease-out 0.4s;
+}
+
+.line-4 {
+  bottom: 0;
+  left: 0;
+}
+
+.inview .line-4 {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  height: 100%;
+}
+
+.line-4 i {
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0s;
+  transition: height 0.4s ease-out 0s;
+}
+
+/*WHITE*/
+/* Hér byrjar scss fyrir linur utan um texta */
+.closest-events_i_white {
+  margin-top: 2.5em;
+  left: 0.3125em;
+  z-index: 9999;
+  width: 43.75em;
+  height: 30em;
+  position: absolute;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .closest-events_i_white {
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i {
+  -webkit-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+}
+
+.no-touch .closest-events_i_white:hover .line-2_white i {
+  -webkit-transition: height 0.4s ease-out 0.4s;
+  transition: height 0.4s ease-out 0.4s;
+}
+
+.no-touch .closest-events_i_white:hover .line-3_white i {
+  -webkit-transition: width 0.4s ease-out 0.8s;
+  transition: width 0.4s ease-out 0.8s;
+}
+
+.no-touch .closest-events_i_white:hover .line-4_white i {
+  -webkit-transition: height 0.4s ease-out 1.2s;
+  transition: height 0.4s ease-out 1.2s;
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i,
+.no-touch .closest-events_i_white:hover .line-2_white i,
+.no-touch .closest-events_i_white:hover .line-3_white i,
+.no-touch .closest-events_i_white:hover .line-4_white i {
+  width: 100%;
+  height: 100%;
+}
+
+.line-2_white,
+.line-4_white {
+  width: 4px;
+  height: 0;
+  background: transparent;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+  .line-2_white,
+  .line-4_white {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .line-2_white,
+  .line-4_white {
+    height: 100%;
+  }
+}
+
+.line-2_white i,
+.line-4_white i {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #ffffff;
+}
+
+.line-1_white,
+.line-3_white {
+  height: 4px;
+  width: 0;
+  background: transparent;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+  .line-1_white,
+  .line-3_white {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .line-1_white,
+  .line-3_white {
+    width: 100%;
+  }
+}
+
+.line-1_white i,
+.line-3_white i {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: #ffffff;
+}
+
+.line-1_white {
+  left: 0;
+  top: 0;
+}
+
+.inview .line-1_white {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out;
+  transition: background 0.4s ease, width 0.4s ease-out;
+  width: 100%;
+}
+
+.line-1_white i {
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 1.2s;
+  transition: width 0.4s ease-out 1.2s;
+}
+
+.line-2_white {
+  top: 0;
+  right: 0;
+}
+
+.inview .line-2_white {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  height: 100%;
+}
+
+.line-2_white i {
+  top: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0.8s;
+  transition: height 0.4s ease-out 0.8s;
+}
+
+.line-3_white {
+  right: 0;
+  bottom: 0;
+}
+
+.inview .line-3_white {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  width: 100%;
+}
+
+.line-3_white i {
+  right: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 0.4s;
+  transition: width 0.4s ease-out 0.4s;
+}
+
+.line-4_white {
+  bottom: 0;
+  left: 0;
+}
+
+.inview .line-4_white {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  height: 100%;
+}
+
+.line-4_white i {
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0s;
+  transition: height 0.4s ease-out 0s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hofsosInfo img {
+    margin-left: 0;
+  }
+  .moreAboutHofsos img {
+    margin-left: 25%;
+  }
+  .moreAboutHofsos .closest-events_i {
+    margin-left: 20%;
+  }
+  .detailAboutHofsos {
+    margin-left: -12%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hofsosInfoText {
+    margin-left: 12%;
+  }
+  .hofsosPriceInfo .hofsosPriceText .priceTwo {
+    margin-right: 15%;
+  }
+  .hofsosPriceInfo .hofsosPricePic {
+    margin-left: 0;
+  }
+  .moreAboutHofsos .closest-events_i {
+    margin-top: -5.625em;
+  }
+  .detailAboutHofsos {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .closest-events_i {
+    display: none;
+  }
+  .pull-right {
+    float: left !important;
+  }
+  .hofsosInfo {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .hofsosPriceInfo {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+  }
+  .hofsosPriceInfo .pull-right {
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+  .hofsosPriceInfo .hofsosPriceText {
+    margin-left: 10%;
+  }
+  .hofsosInfoText {
+    border: 3px solid #375874;
+    width: 500px;
+    height: 173px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .hofsosInfoText h3, .hofsosInfoText p, .hofsosInfoText .lineBetween, .hofsosInfoText a {
+    margin-left: 35px;
+  }
+  .hofsosInfoText .map {
+    bottom: 5.625em;
+    right: 3.125em;
+  }
+  .imgInfo {
+    margin-left: 14%;
+  }
+  .moreAboutHofsos .detailAboutHofsos p {
+    margin-top: 3.125em;
+    border: 3px solid #375874;
+    padding: 0.9375em;
+  }
+  .ListOfThingsInThePool .item p {
+    width: 200px;
+  }
+  footer .footer {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .hofsosSearch {
+    margin-right: 10px;
+  }
+  .jumbotron_undirsida {
+    height: 200px;
+  }
+  .jumbotron_undirsida h2 {
+    margin-top: 100px;
+  }
+  .hofsosInfoText {
+    border: 3px solid #375874;
+    width: 370px;
+    height: 195px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .hofsosInfoText h3, .hofsosInfoText p, .hofsosInfoText .lineBetween, .hofsosInfoText a {
+    margin-left: 20px;
+  }
+  .hofsosInfo img {
+    width: 300px;
+  }
+  .imgInfo {
+    margin-left: 9%;
+  }
+  .hofsosPriceInfo .hofsosPricePic {
+    margin-top: 50px;
+    width: 300px;
+  }
+  .hofsosPriceInfo .hofsosPriceText .priceTwo {
+    float: none;
+  }
+  .hofsosPriceInfo .hofsosPriceText .priceThree {
+    margin-top: 0.3125em;
+  }
+  .moreAboutHofsos img {
+    margin-left: 10%;
+  }
+  .moreAboutHofsos .detailAboutHofsos {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .detailAboutHofsos {
+    margin-left: 0;
+  }
+}
+
+button.opidNunaTakki {
+  float: right;
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  text-transform: uppercase;
+  padding: 0.5em 1.0625em;
+  height: 2.375em;
+  margin: 6px 0 7px 25px;
+  background: #FFF;
+  border: 2px solid #F04A83;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #F04A83;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+button.opidNunaTakki:hover {
+  color: #fff;
+}
+
+button.opidNunaTakki:hover, button.opidNunaTakki.active {
+  box-shadow: inset 15.625em 0 0 0 #F04A83;
+  color: #ffffff;
+}
+
+.fleira {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  text-transform: uppercase;
+  margin-bottom: 1.25em;
+  background: #FFF;
+  border: 2px solid #F04A83;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #F04A83;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fleira:hover {
+  color: #fff;
+}
+
+.fleira:hover, .fleira.active {
+  box-shadow: inset 15.625em 0 0 0 #F04A83;
+  color: #ffffff;
+}
+
+.jumbotron_forsida {
+  height: 340px;
+  background-image: url(../images/laugarForsida.jpg);
+  background-size: 100% 340px;
+  margin-bottom: 0px;
+  z-index: 99999;
+  position: relative;
+}
+
+.jumbotron_forsida img {
+  height: 50px;
+  margin-top: 180px;
+  margin-left: 10%;
+}
+
+/*To Top*/
+header {
+  background: #ffffff;
+  height: 40px;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  top: 0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: -40px;
+}
+
+.glyphicon-menu-up {
+  color: #375874;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+
+/*To Top Ends*/
+.leitar-input {
+  font-family: 'font-regular';
+  font-size: 1.5em;
+  color: #b6b6b6;
+  width: 100%;
+  height: 5.625em;
+  border: none;
+  border-bottom: 0.125em solid #19FFB3;
+  border-left: 5.5em solid #19FFB3;
+  text-indent: 2.5em;
+}
+
+.leitar-input:focus {
+  outline: none;
+}
+
+.twitter-typeahead {
+  width: 100%;
+}
+
+/*Leitardæmið*/
+.tt-dataset {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 6.625em solid #19FFB3;
+  font-family: 'font-regular';
+  font-size: 1.25em;
+  color: #375874;
+  line-height: 3.125em;
+  color: #375874;
+}
+
+.tt-menu {
+  width: 100%;
+  margin-top: 0;
+  text-indent: 7.375em;
+}
+
+.tt-menu .tt-suggestion.tt-cursor, .tt-menu .tt-suggestion:hover {
+  background: #19FFB3;
+  color: #ffffff;
+  font-family: "font-demi";
+  background-image: url(../icon/arrow_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.375em;
+  background-position: 6% 50%;
+}
+
+/*Leitardæmið Búið*/
+/* Velja stað dropdown*/
+.glyphicon-menu-right {
+  color: #19FFB3;
+}
+
+button.velja_stad {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  text-transform: uppercase;
+  background: #FFF;
+  padding: 0.5em 1.0625em;
+  height: 2.375em;
+  margin-top: 0.125em;
+  margin-left: 2.1875em;
+  border: 0.1875em solid #19FFB3;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #19FFB3;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  display: none;
+}
+
+button.velja_stad:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  button.velja_stad {
+    display: block;
+  }
+}
+
+button.velja_stad:hover {
+  box-shadow: inset 15.625em 0 0 0 #19FFB3;
+  color: #FFF;
+}
+
+/* dropdown lokið*/
+form {
+  margin-bottom: 1.25em;
+}
+
+.flokkaVal {
+  margin-bottom: 2.5em;
+}
+
+.flokkaVal button {
+  background: #fff;
+  border: none;
+  display: inline-block;
+  margin-left: 1.25em;
+  margin-right: 3.125em;
+  margin-top: 1.25em;
+  position: relative;
+  padding: 0 0 0.375em 0;
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: rgba(55, 88, 116, 0.6);
+  text-transform: uppercase;
+}
+
+.flokkaVal button:focus {
+  outline: none;
+}
+
+.flokkaVal button:hover {
+  color: #375874;
+}
+
+.flokkaVal button:before, .flokkaVal button.active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.375em;
+  width: 0;
+  -webkit-transition: width 0s ease, background .5s ease;
+  transition: width 0s ease, background .5s ease;
+}
+
+.flokkaVal button:after, .flokkaVal button.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0.375em;
+  width: 0;
+  background: #19FFB3;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.flokkaVal button:hover:before, .flokkaVal button.active:before {
+  width: 100%;
+  background: #19FFB3;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.flokkaVal button:hover:after, .flokkaVal button.active:after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+.flokkaVal button.active {
+  color: #375874;
+}
+
+.flokkaVal ul {
+  list-style-type: none;
+}
+
+.flokkaVal ul li {
+  display: inline-block;
+}
+
+.bigScreen ul {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.first {
+  margin-right: 1.875em;
+  margin-left: 1.875em;
+  padding-left: 3.75em;
+  border-left: 0.1875em solid #375874;
+}
+
+.bigPlaceInfo {
+  background-color: rgba(55, 88, 116, 0.6);
+  width: 12.5em;
+  padding: 0.3125em 0 0.625em 0;
+  font-family: 'font-bebas';
+  font-size: 2em;
+  color: #fff;
+}
+
+.bigPlaceInfo b {
+  color: #19FFB3;
+  margin-right: 0.625em;
+}
+
+.bigPlaceInfo h2 {
+  margin-left: 0.625em;
+}
+
+.underLine:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 6.875em;
+  height: 0.1875em;
+  width: 0;
+  -webkit-transition: width 0s ease, background .7s ease;
+  transition: width 0s ease, background .7s ease;
+}
+
+.underLine:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 0.1875em;
+  bottom: 10.9375em;
+  left: 5.3125em;
+  width: 0;
+  background: #F04A83;
+  -webkit-transition: width .7s ease;
+  transition: width .7s ease;
+}
+
+.underLine:hover:before {
+  width: 59%;
+  background: #F04A83;
+  bottom: 10.9375em;
+  left: 5.3125em;
+  -webkit-transition: width .7s ease;
+  transition: width .7s ease;
+  z-index: 9999;
+}
+
+.underLine:hover:after {
+  width: 58%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+.bigTimeInfo {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 9.375em;
+  width: 21.875em;
+  position: absolute;
+  margin-left: 1.25em;
+  bottom: 0;
+  font-family: 'font-regular';
+  font-size: 1.25em;
+  color: #375874;
+}
+
+.bigTimeInfo p {
+  margin-left: 2.1875em;
+  margin-top: 0.9375em;
+}
+
+.bigTimeInfo ul {
+  list-style: none;
+}
+
+.bigTimeInfo .open {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #375874;
+  line-height: 1.5em;
+}
+
+.smallPlaceInfo {
+  background-color: rgba(55, 88, 116, 0.6);
+  width: 100%;
+  height: 2.1875em;
+  font-family: 'font-bebas';
+  font-size: 1.25em;
+  color: #fff;
+}
+
+.smallCard {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.smallCard .smallTimeInfo {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: -120px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 162px;
+  width: 100%;
+}
+
+.smallCard .smallTimeInfo p {
+  font-family: 'font-regular';
+  font-size: 1.125em;
+  color: #b6b6b6;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.smallCard .smallTimeInfo ul {
+  list-style-type: none;
+  padding-left: 15px;
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #000000;
+  line-height: 1.875em;
+}
+
+.smallCard:hover .smallTimeInfo {
+  bottom: 0;
+}
+
+.bigLaugardalur {
+  background-image: url(../images/laugardalur.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigArbaer {
+  background-image: url(../images/arbajarlaug.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigHofsos {
+  background-image: url(../images/hofsosLaug4.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigLagafell {
+  background-image: url(../images/moso.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigBorgarnes {
+  background-image: url(../images/borgarnes.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigSundhollin {
+  background-image: url(../images/sundhollRvk.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigVestmannaeyjar {
+  background-image: url(../images/vestmanneyjar.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigLaugar {
+  background-image: url(../images/laugar.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigAsvallalaug {
+  background-image: url(../images/asvallalaug2.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigDalvik {
+  background-image: url(../images/davik.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigHofn {
+  background-image: url(../images/hofn.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigHusavik {
+  background-image: url(../images/husavik.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigNeskaupsstadir {
+  background-image: url(../images/neskaupsstadur.jpg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+.bigOlafsfjordur {
+  background-image: url(../images/olafsfjordur.jpeg);
+  position: relative;
+  height: 400px;
+  margin-bottom: 2.1875em;
+  background-size: 100% 400px;
+}
+
+#cardsSmall .mix {
+  display: none;
+}
+
+#cardsBig .mix {
+  display: none;
+}
+
+.cardsSmall .smallLaugardalur {
+  background-image: url(../images/laugardalurSmall.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallLaugardalur h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallLaugardalur h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallLaugardalur p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallLaugardalur .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallArbaer {
+  background-image: url(../images/arbajarlaugSmall.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallArbaer h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallArbaer h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallArbaer p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallArbaer .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallHofsos {
+  background-image: url(../images/hofsosSmall.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallHofsos h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallHofsos h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallHofsos p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallHofsos .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallLagafell {
+  background-image: url(../images/mosoSmall.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallLagafell h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallLagafell h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallLagafell p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallLagafell .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallBorgarnes {
+  background-image: url(../images/borgarnes.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallBorgarnes h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallBorgarnes h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallBorgarnes p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallBorgarnes .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallSundhollin {
+  background-image: url(../images/sundhollRvkSmall.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallSundhollin h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallSundhollin h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallSundhollin p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallSundhollin .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallVestmannaeyjar {
+  background-image: url(../images/vestmanneyjar.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallVestmannaeyjar h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallVestmannaeyjar h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallVestmannaeyjar p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallVestmannaeyjar .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallLaugar {
+  background-image: url(../images/laugar.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallLaugar h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallLaugar h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallLaugar p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallLaugar .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallAsvallalaug {
+  background-image: url(../images/asvallalaug2.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallAsvallalaug h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallAsvallalaug h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallAsvallalaug p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallAsvallalaug .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallDalvik {
+  background-image: url(../images/davik.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallDalvik h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallDalvik h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallDalvik p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallDalvik .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallHofn {
+  background-image: url(../images/hofn.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallHofn h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallHofn h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallHofn p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallHofn .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallHusavik {
+  background-image: url(../images/husavik.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallHusavik h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallHusavik h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallHusavik p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallHusavik .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallNeskaupsstadur {
+  background-image: url(../images/neskaupsstadur.jpg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallNeskaupsstadur h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallNeskaupsstadur h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallNeskaupsstadur p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallNeskaupsstadur .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+.cardsSmall .smallOlafsfjordur {
+  background-image: url(../images/olafsfjordur.jpeg);
+  position: relative;
+  height: 200px;
+  background-size: 100% 200px;
+}
+
+.cardsSmall .smallOlafsfjordur h2 {
+  font-family: 'font-regular';
+  font-size: 1em;
+  color: #ffffff;
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+.cardsSmall .smallOlafsfjordur h2 b {
+  color: #19FFB3;
+  margin-right: 7px;
+}
+
+.cardsSmall .smallOlafsfjordur p {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F04A83;
+}
+
+.cardsSmall .smallOlafsfjordur .smallCardLine {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+  border: 0;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .flokkaVal button {
+    margin-left: 0.3125em;
+    margin-right: 0.9375em;
+  }
+  button.opidNunaTakki {
+    margin: -2px 0 7px 25px;
+  }
+  #bigIcon, #smallIcon {
+    height: 23px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /*DROPDOWN*/
+  #bigIcon, #smallIcon {
+    display: none;
+  }
+  .bigScreen {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .bigScreen .opidNunaTakki {
+    margin: 6px 0 7px 25px;
+  }
+  .underLine:before {
+    display: none;
+  }
+  .underLine:after {
+    display: none;
+  }
+  .underLine:hover:before {
+    display: none;
+  }
+  .underLine:hover:after {
+    display: none;
+  }
+  .underLine .bigTimeInfo p {
+    border-bottom: 3px solid #F04A83;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .flokkaVal .flokka-val-inner_2 {
+    display: none;
+  }
+}
+
+/* for ipad*/
+@media only screen and (max-width: 768px) {
+  .jumbotron_forsida {
+    height: 250px;
+    background-size: 100% 250px;
+  }
+  .jumbotron_forsida img {
+    height: 40px;
+    margin-top: 130px;
+  }
+  .leitar-input {
+    border-left: 3.125em solid #19FFB3;
+  }
+  .tt-dataset {
+    border-left: 3.75em solid #19FFB3;
+  }
+  .flokkaVal {
+    display: none;
+    background-color: #ffffff;
+    z-index: 9999999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  .flokkaVal .flokka-val-inner {
+    display: none;
+  }
+  .flokkaVal .flokka-val-inner_2 button.myMobileButton {
+    font-size: 1.5em;
+    color: #375874;
+    width: 12.5em;
+    padding: 1.875em 0 2.5em 2.5em;
+    margin: 0 auto;
+  }
+  .flokkaVal .flokka-val-inner_2 button.myMobileButton:before {
+    display: none;
+  }
+  .flokkaVal .flokka-val-inner_2 button.myMobileButton:after {
+    display: none;
+  }
+  .flokkaVal ul {
+    display: block;
+  }
+  .bigScreen .opidNunaTakki {
+    margin: 1px 0 7px 25px;
+    margin-left: 0;
+  }
+  .bigTimeInfo {
+    width: 100%;
+    margin-left: 0;
+  }
+  .bigTimeInfo .open {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 763px) {
+  .cardsBig {
+    margin-left: 27px;
+  }
+}
+
+/* for phone */
+@media only screen and (max-width: 420px) {
+  .cardsSmall {
+    display: none;
+  }
+  .cardsBig {
+    display: block;
+    margin-left: 0;
+  }
+  .jumbotron_forsida {
+    height: 150px;
+    background-size: 100% 150px;
+  }
+  .jumbotron_forsida img {
+    height: 40px;
+    margin-top: 55px;
+  }
+  .leitar-input {
+    border-left: 3.125em solid #19FFB3;
+    height: 3.75em;
+  }
+  .tt-dataset {
+    border-left: 3.75em solid #19FFB3;
+  }
+  .underLine {
+    width: 100%;
+  }
+  .bigPlaceInfo {
+    width: 100%;
+  }
+  .bigTimeInfo {
+    width: 100%;
+    margin-left: 0;
+  }
+  .bigTimeInfo .open {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .footer {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .footer .pull-right {
+    margin-left: 70px;
+  }
+}
+
+footer {
+  border-top: 0.125em solid #375874;
+  font-family: 'font-demi';
+  font-size: 0.75em;
+  color: #375874;
+}
+
+footer .footer {
+  margin-top: 1.25em;
+}
+
+footer img {
+  height: 1.25em;
+}
